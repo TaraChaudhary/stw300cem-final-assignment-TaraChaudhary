@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearlayout"
+
+
+    >
+    <RelativeLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <include
+
+            layout="@layout/layout_toolbar"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_below="@id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/homeNavigation"
+
+
+        >
+    <LinearLayout
+        android:id="@+id/lineara"
+        android:layout_below="@id/tool"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+
+        android:layout_marginEnd="20sp"
+        android:orientation="vertical"
+        android:foreground="?android:attr/selectableItemBackground"
+        >
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.card.MaterialCardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/sa"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:id="@+id/practice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/practice1"
+                        android:layout_width="96dp"
+                        android:layout_height="89dp"
+                        android:background="@drawable/shape"
+                        android:padding="10dp"
+                        android:src="@drawable/practice" />
+                    <TextView
+                        android:id="@+id/practice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="Practice"/>
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:id="@+id/signal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/signal2"
+                        android:layout_width="96dp"
+                        android:layout_height="89dp"
+                        android:background="@drawable/shape"
+                        android:padding="10dp"
+                        android:src="@drawable/road" />
+                    <TextView
+                        android:id="@+id/signal1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="Signal"/>
+
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.card.MaterialCardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/card"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:id="@+id/roadrule"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/roadrule2"
+                        android:layout_width="96dp"
+                        android:layout_height="89dp"
+                        android:background="@drawable/shape"
+                        android:src="@drawable/rule"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:id="@+id/roadrule1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="Road rule"/>
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:id="@+id/example"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/example1"
+                        android:layout_width="96dp"
+                        android:layout_height="89dp"
+                        android:background="@drawable/shape"
+                        android:src="@drawable/book"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:id="@+id/example2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="Example"/>
+
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.card.MaterialCardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/bankcardId"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:id="@id/score"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/score"
+                        android:layout_width="96dp"
+                        android:layout_height="89dp"
+                        android:background="@drawable/shape"
+                        android:src="@drawable/score"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:id="@+id/score1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="My score"/>
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:id="@+id/help"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/helps"
+                        android:layout_width="96dp"
+                        android:layout_height="89dp"
+                        android:background="@drawable/shape"
+                        android:src="@drawable/temp"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:id="@+id/help1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+
+                        android:text="Temperature"/>
+
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:id="@+id/maps"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/map"
+                        android:layout_width="96dp"
+                        android:layout_height="89dp"
+                        android:background="@drawable/shape"
+                        android:src="@drawable/location"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:id="@+id/map1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+
+                        android:text="Our location"/>
+
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

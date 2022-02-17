@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/linearlayout">
+
+    <ImageView
+        android:id="@+id/sign"
+        android:layout_width="102dp"
+        android:layout_height="102dp"
+        android:src="@drawable/noimage" />
+
+    <TextView
+        android:id="@+id/namesignal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sign"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginBottom="66dp"
+        android:layout_toEndOf="@+id/sign"
+        android:layout_toRightOf="@+id/sign"
+        android:hint="name" />
+
+    <TextView
+        android:id="@+id/signdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sign"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginBottom="29dp"
+        android:layout_toEndOf="@+id/sign"
+        android:layout_toRightOf="@+id/sign"
+        android:hint="Description" />
+
+</RelativeLayout>

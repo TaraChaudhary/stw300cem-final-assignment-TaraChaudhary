@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='Traffic-Rule-and-sign-quiz-app'

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <Button
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@drawable/ic_arrow_back_black_24dp"/>
+    <TextView
+        android:layout_toRightOf="@+id/back"
+        android:id="@+id/toolbarhead"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Dashboard"
+        android:textColor="#0078FF"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/post_profileimg"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="185dp"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/toolbarhead"
+        android:layout_toRightOf="@+id/toolbarhead"
+        android:foregroundGravity="right"
+        android:src="@drawable/me" />
+
+
+</RelativeLayout>

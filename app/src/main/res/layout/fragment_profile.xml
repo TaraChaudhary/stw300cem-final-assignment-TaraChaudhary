@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout1">
+
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/background"
+            app:srcCompat="@drawable/background" />
+        <Button
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/ic_arrow_back_black_24dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/post_profileimg"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#FFFFFFFF"
+            android:elevation="5dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="7dp"
+
+            android:foregroundGravity="right"
+            android:src="@drawable/me" />
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_cover_image"
+            android:background="@drawable/background"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+
+                android:src="@android:drawable/ic_menu_edit" />
+
+            <TextView
+                android:id="@+id/fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:text="Tara Chaudhary"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="tara07"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profile_layout"
+            android:layout_margin="5dp"
+
+            android:layout_marginTop="5dp"
+
+            android:background="#fff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+
+            >
+
+            <TextView
+                android:id="@+id/name"
+                android:textSize="15sp"
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:text="First Name: "
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:text="Firstname"
+                app:layout_constraintLeft_toRightOf="@+id/name"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+            android:id="@+id/last"
+
+                android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:text="Last Name: "
+                android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="25dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+
+            <TextView
+                android:id="@+id/lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:text="lastname"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/name"
+                app:layout_constraintLeft_toRightOf="@+id/last"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                    android:id="@+id/gend"
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:text="Gender: "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/last" />
+
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:text="gender"
+                app:layout_constraintLeft_toRightOf="@+id/last"
+                app:layout_constraintTop_toBottomOf="@+id/lastname" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:text="Email: "
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginLeft="25dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/gend" />
+
+
+            <TextView
+                android:id="@+id/email1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:text="email"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/gend"
+                app:layout_constraintLeft_toRightOf="@+id/email"
+                android:layout_marginLeft="8dp" />
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:text="Phone: "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+
+            <TextView
+                android:id="@+id/phone1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:text="phone"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/email"
+                app:layout_constraintLeft_toRightOf="@+id/phone"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/Dob"
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:text="Dob: "
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginLeft="25dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+
+            <TextView
+                android:id="@+id/dob1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:text="dob"
+                app:layout_constraintLeft_toRightOf="@+id/Dob"
+                app:layout_constraintTop_toBottomOf="@+id/phone" />
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fifth"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="22dp"
+                app:layout_constraintLeft_toRightOf="@+id/Dob"
+                app:layout_constraintTop_toBottomOf="@+id/Dob"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:text="Logout"
+                android:textColor="@android:color/white"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
